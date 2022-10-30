@@ -4,6 +4,7 @@
 , deepseq
 , directory
 , exceptions
+, fetchgit
 , fusion-plugin-types
 , ghc-prim
 , heaps
