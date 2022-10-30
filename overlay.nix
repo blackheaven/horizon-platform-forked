@@ -375,8 +375,6 @@ final: prev: with pkgs.haskell.lib; {
 
     optics-th = prev.callPackage (./pkgs/optics-th.nix) { };
 
-    pandoc = prev.callPackage (./pkgs/pandoc.nix) { };
-
     parallel = prev.callPackage (./pkgs/parallel.nix) { };
 
     password = prev.callPackage (./pkgs/password.nix) { };
@@ -574,12 +572,6 @@ final: prev: with pkgs.haskell.lib; {
     type-errors-pretty = prev.callPackage (./pkgs/type-errors-pretty.nix) { };
 
     typerep-map = prev.callPackage (./pkgs/typerep-map.nix) { };
-
-    unicode-collation = prev.callPackage (./pkgs/unicode-collation.nix) { };
-
-    unicode-data = prev.callPackage (./pkgs/unicode-data.nix) { };
-
-    unicode-transforms = prev.callPackage (./pkgs/unicode-transforms.nix) { };
 
     universe-base = prev.callPackage (./pkgs/universe-base.nix) { };
 
