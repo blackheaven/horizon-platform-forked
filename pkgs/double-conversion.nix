@@ -5,7 +5,6 @@
 , ghc-prim
 , HUnit
 , lib
-, system-cxx-std-lib
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2
@@ -24,7 +23,6 @@ mkDerivation {
     base
     bytestring
     ghc-prim
-    system-cxx-std-lib
     text
   ];
   testHaskellDepends = [
