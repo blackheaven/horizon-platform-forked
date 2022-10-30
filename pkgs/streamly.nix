@@ -6,18 +6,19 @@
 , directory
 , exceptions
 , fetchgit
-, hashable
+, filepath
+, fusion-plugin-types
+, ghc-prim
 , heaps
 , lib
 , lockfree-queue
 , monad-control
 , mtl
 , network
-, streamly-core
+, primitive
 , transformers
 , transformers-base
 , unicode-data
-, unordered-containers
 }:
 mkDerivation {
   pname = "streamly";
@@ -35,17 +36,18 @@ mkDerivation {
     deepseq
     directory
     exceptions
-    hashable
+    filepath
+    fusion-plugin-types
+    ghc-prim
     heaps
     lockfree-queue
     monad-control
     mtl
     network
-    streamly-core
+    primitive
     transformers
     transformers-base
     unicode-data
-    unordered-containers
   ];
   homepage = "https://streamly.composewell.com";
   description = "Dataflow programming and declarative concurrency";
