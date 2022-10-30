@@ -10,7 +10,7 @@
         pkgs = import nixpkgs { inherit system; };
         overrides-hp = import ./overlay.nix { inherit inputs pkgs; };
         configuration = import ./configuration.nix { inherit inputs pkgs; };
-        hp = pkgs.haskell.packages.ghc942.override {
+        hp = pkgs.haskell.packages.ghc924.override {
           overrides = pkgs.lib.composeManyExtensions [ overrides-hp configuration ];
         };
         hp' = pkgs.lib.filterAttrs
@@ -37,7 +37,7 @@
           dhall-format = lint-utils.outputs.linters.x86_64-linux.dhall-format ./.;
           nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
-        overrides.ghc942 = overrides-hp;
+        overrides.ghc924 = overrides-hp;
         packages = hp';
       });
 }
