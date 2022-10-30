@@ -1,53 +1,45 @@
 { mkDerivation
-, atomic-primops
 , base
 , containers
 , deepseq
 , directory
 , exceptions
-, fetchgit
-, hashable
+, fusion-plugin-types
+, ghc-prim
 , heaps
 , lib
-, lockfree-queue
 , monad-control
 , mtl
-, network
-, streamly-core
+, template-haskell
 , transformers
-, transformers-base
-, unicode-data
-, unordered-containers
 }:
-mkDerivation {
-  pname = "streamly";
-  version = "0.9.0";
-  src = fetchgit {
+let
+  rootSrc = fetchgit {
     url = "https://github.com/composewell/streamly";
     sha256 = "0n5q7v3gzvmj5pcvpg4xg38wdz43xkqwk6bqp2r6rnxppq5h2i81";
     rev = "0902a1587f7f2a4f5f02fd7fa58a0a210e5b4636";
     fetchSubmodules = true;
   };
+in
+mkDerivation {
+  pname = "streamly-core";
+  version = "0.1.0";
+  src = "${rootSrc}/core";
   libraryHaskellDepends = [
-    atomic-primops
     base
     containers
     deepseq
     directory
     exceptions
-    hashable
+    fusion-plugin-types
+    ghc-prim
     heaps
-    lockfree-queue
     monad-control
     mtl
-    network
-    streamly-core
+    template-haskell
     transformers
-    transformers-base
-    unicode-data
-    unordered-containers
   ];
   homepage = "https://streamly.composewell.com";
   description = "Dataflow programming and declarative concurrency";
-  license = lib.licenses.bsd3;
+  license = "unknown";
 }
