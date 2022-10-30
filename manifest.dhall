@@ -156,11 +156,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "4eb97c213acf7abe965a3a1b67397199ed155f3c")
         (None Text)
     , callCabal2nix
-        "double-conversion"
-        "https://github.com/haskell/double-conversion"
-        (None Text)
-        (None Text)
-    , callCabal2nix
         "ed25519"
         "https://gitlab.homotopic.tech/horizon/adopted/ed25519"
         (None Text)
@@ -331,7 +326,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "password-types" "1.0.0.0"
     , callHackage "password" "3.0.2.0"
     , callHackage "pcg-random" "0.1.3.7"
-    , callHackage "pcre2" "2.2.1"
     , callHackage "persistent" "2.14.3.0"
     , callHackage "pg-entity" "0.0.2.0"
     , callHackage "pg-transact" "0.3.2.0"
