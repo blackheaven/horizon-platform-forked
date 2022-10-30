@@ -193,8 +193,6 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-dirforest = prev.callPackage (./pkgs/genvalidity-dirforest.nix) { };
 
-    genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
-
     genvalidity-path = prev.callPackage (./pkgs/genvalidity-path.nix) { };
 
     genvalidity-persistent = prev.callPackage (./pkgs/genvalidity-persistent.nix) { };
@@ -278,16 +276,6 @@ final: prev: with pkgs.haskell.lib; {
     hpack-dhall = prev.callPackage (./pkgs/hpack-dhall.nix) { };
 
     hslua-aeson = prev.callPackage (./pkgs/hslua-aeson.nix) { };
-
-    hspec = prev.callPackage (./pkgs/hspec.nix) { };
-
-    hspec-contrib = prev.callPackage (./pkgs/hspec-contrib.nix) { };
-
-    hspec-core = prev.callPackage (./pkgs/hspec-core.nix) { };
-
-    hspec-discover = prev.callPackage (./pkgs/hspec-discover.nix) { };
-
-    hspec-meta = prev.callPackage (./pkgs/hspec-meta.nix) { };
 
     http-client = prev.callPackage (./pkgs/http-client.nix) { };
 

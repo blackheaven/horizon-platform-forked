@@ -199,7 +199,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/NorfairKing/dirforest"
         (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
         (Some "genvalidity-dirforest")
-    , callHackage "genvalidity-hspec" "1.0.0.2"
     , callHackage "genvalidity-path" "1.0.0.1"
     , callHackage "genvalidity-persistent" "1.0.0.1"
     , callHackage "genvalidity-property" "1.0.0.0"
@@ -254,11 +253,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "918df757ce5c9244232c1e3a1e05e9d9e3ab4f09")
         (None Text)
     , callHackage "hslua-aeson" "2.2.1"
-    , callHackage "hspec" "2.10.3"
-    , callHackage "hspec-contrib" "0.5.1.1"
-    , callHackage "hspec-core" "2.10.0.1"
-    , callHackage "hspec-discover" "2.10.0.1"
-    , callHackage "hspec-meta" "2.9.3"
     , callHackage "http-client" "0.7.13.1"
     , callHackage "http-date" "0.0.11"
     , callHackage "http-types" "0.12.3"
