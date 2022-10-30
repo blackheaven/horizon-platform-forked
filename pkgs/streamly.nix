@@ -21,11 +21,11 @@
 }:
 mkDerivation {
   pname = "streamly";
-  version = "0.9.0";
+  version = "0.8.3";
   src = fetchgit {
     url = "https://github.com/composewell/streamly";
-    sha256 = "0n5q7v3gzvmj5pcvpg4xg38wdz43xkqwk6bqp2r6rnxppq5h2i81";
-    rev = "0902a1587f7f2a4f5f02fd7fa58a0a210e5b4636";
+    sha256 = "17vbabg6a8s5d2zjipfw4x27lhv1g4rhzav4545k2na8agswmx4a";
+    rev = "686990bea661b91160df5a8508d0ac10d3a53c9e";
     fetchSubmodules = true;
   };
   libraryHaskellDepends = [
