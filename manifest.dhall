@@ -472,6 +472,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/parsonsmatt/typerep-map"
         (Some "75b7cd5d45986be07420a6821d352ad2adc0b697")
         (None Text)
+    , callHackage "unicode-data" "0.3.1"
     , callHackage "universe-base" "1.1.3"
     , callHackage "unordered-containers" "0.2.19.1"
     , callHackage "validity" "0.12.0.1"

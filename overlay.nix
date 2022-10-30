@@ -561,6 +561,8 @@ final: prev: with pkgs.haskell.lib; {
 
     typerep-map = prev.callPackage (./pkgs/typerep-map.nix) { };
 
+    unicode-data = prev.callPackage (./pkgs/unicode-data.nix) { };
+
     universe-base = prev.callPackage (./pkgs/universe-base.nix) { };
 
     unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
