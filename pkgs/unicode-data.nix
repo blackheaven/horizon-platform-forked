@@ -10,7 +10,7 @@
 mkDerivation {
   pname = "unicode-data";
   version = "0.3.1";
-  sha256 = "089jscb4bd854hnf2y076a40ckhsfd60qhml93z4nl929l44w2bx";
+  sha256 = "vh+BVJenxNRjlbpt/En4EalxamcDgfifECt98PDzXGA=";
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [ base ];
